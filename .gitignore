@@ -1,0 +1,10 @@
+data/*
+*output*
+*temp_file/*
+*.DS*
+*.pyc
+*temp*
+*example_data*
+.vscode/
+*checkpoints*
+*__pycache__/*
