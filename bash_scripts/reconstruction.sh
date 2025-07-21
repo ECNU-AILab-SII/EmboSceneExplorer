@@ -3,8 +3,8 @@
 
 # RGBD reconstruction
 # output: point cloud, mesh
-python tools/rgbd_reconstruction.py \
-        --data_dir example_data/demo \
+python ../tools/rgbd_reconstruction.py \
+        --data_dir ../example_data/demo \
         --trans2scanet \
 
 
