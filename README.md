@@ -1,7 +1,7 @@
 
 ![Teaser](assets/teaser.png)
 
-# EmboSceneExplorer: Embodied 3D Scene Perception and Navigation System
+# EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation
 
 ## 🔥 News
 - [2025-7-22] Version 1.0 released! 🎉
@@ -141,7 +141,7 @@ If you use EmboSceneExplorer in your research, please consider citing:
 ```bibtex
 @misc{EmboSceneExplorer,
   author = {EmboSceneExplorer Authors},
-  title = {EmboSceneExplorer: An Universal Robotics Simulation platform based on habitat-sim},
+  title = {EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation},
   month = {December},
   year = {2025},
   url = {https://github.com/ECNU-AILab-SII/EmboSceneExplorer/}
