@@ -17,51 +17,25 @@
 
 ## What is EmboSceneExplorer?
 
-**EmboSceneExplorer** is an end-to-end scene understanding and autonomous navigation system built on the Habitat simulation environment. It enables robots and embodied AI agents to perform intelligent perception, semantic reconstruction, and goal-oriented exploration in complex 3D environments through multimodal data fusion. The workflow comprises four core components:
+**EmboSceneExplorer** is a multimodal scene perception, understanding, and navigation system built on the Habitat simulation environment. It enables Embodied AI Agents to perform 3D perception and reconstruction, LLM-based grounding, and goal-oriented navigation within virtual 3D scenes (e.g., ScanNet, Matterport3D). The workflow comprises four core components:
 
 1. **Multimodal Data Collection and Reconstruction**  
-   Dynamically captures RGB/RGB-D image sequences, depth maps, and semantic maps with COLMAP-style camera poses.
-
-2. **Scene Reconstruction & Understanding**  
-   Generates comprehensive scene representations including:  
+  Captures RGB/RGB-D image sequences, depth maps, and semantic maps with COLMAP-style camera poses, generating multimodal scene representations including:
    - High-fidelity meshes  
    - Dense point clouds  
    - Occupancy grid maps (Occ)
 
-3. **3D Visual Grounding**  
-   Bridges language and spatial understanding by:  
-   - Parsing natural language instructions into actionable goals  
-   - Grounding semantic concepts to 3D locations  
-   - Generating pixel-accurate object masks from textual queries
+2. **3D Visual Grounding**  
+   Bridges language and spatial understanding by:
+   - Parsing natural language instructions (supporting both English and Chinese) into actionable goals
+   - Grounding semantic concepts to 3D locations
+   - Generating point-cloud-level accurate object masks from textual queries
 
 4. **Autonomous Navigation**  
-   Integrates scene representations (3DGS/Mesh/Occ) to:  
+   Integrates scene representations (3DGS/Mesh/Occ) to:
    - Build navigable topological maps  
    - Plan optimal collision-free paths  
    - Execute exploration and goal-reaching behaviors
-
-**Note**: The current release includes the core simulation environment with data collection, reconstruction, and navigation modules. Our 3D visual grounding subsystem is under active development and will be expanded in future updates. Advanced features including language-conditioned exploration will be rolled out progressively.
-
-EmboSceneExplorer aims to:
-
-- **Enable closed-loop simulation** from data acquisition → reconstruction → semantic grounding → navigation
-- **Automate embodied data collection** for scalable training of physical AI agents
-- **Unify 3D representations** across perception, reconstruction, and navigation tasks
-
-Project Page: <https://EmboSceneExplorer-embodied-ai.github.io/>
-
-## Key Features
-
-- **Multimodal Sensor Fusion**: Synchronizes vision (RGB-D), geometry (point clouds), and semantics (textual instructions)
-- **Dynamic Scene Modeling**: 
-  - High-fidelity rendering via 3D Gaussian Splatting
-  - Real-time spatial reasoning with occupancy grids
-- **Language-Driven Exploration**: 
-  - Grounds open-ended instructions (e.g., "Find the desk behind the blue door")
-  - Supports zero-shot navigation to novel objects
-- **Modular Architecture**: 
-  - Interchangeable reconstruction backends (3DGS/Mesh/Occ)
-  - Habitat-compatible navigation API
 
 ## Quick Start
 
@@ -92,10 +66,11 @@ conda activate emboscene
 
 ### Data Preparation
 ```bash
-# Download sample scenes:
+# Download example scenes:
 gdown https://drive.google.com/file/d/1jwboFEruYFIG9c31qWga6X-vgbraKIt-/view?usp=sharing
 unzip scenes.zip -d example_data/
 cp example_data/scanet/pointnav_scannet.yaml ./submodules/habitat-lab/habitat-lab/habitat/config/benchmark/nav/pointnav
+
 # Modify the root_path in example_data/scanet/scannet.yaml to the project's absolute path.
 cp example_data/scanet/scannet.yaml ./submodules/habitat-lab/habitat-lab/habitat/config/habitat/dataset/pointnav/
 ```
