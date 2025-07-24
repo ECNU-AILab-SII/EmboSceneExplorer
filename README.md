@@ -102,12 +102,13 @@ bash navigation.sh
 
 ## License and Acknowledgments
 
-The EmboSceneExplorer source code is licensed under Apache 2.0.
+EmboSceneExplorer is MIT licensed. See the [LICENSE](LICENSE) for details.
 
 EmboSceneExplorer's development has been made possible thanks to these open-source projects:
 
-- [Habitat-sim](https://github.com/facebookresearch/habitat-sim.git): High-performance cross-platform compute backend. Kudos to the Taichi team for their technical support!
-- [Habitat-lab](https://github.com/facebookresearch/habitat-lab): Reference MPM solver implementation.
+- [Habitat-sim](https://github.com/facebookresearch/habitat-sim.git): A flexible, high-performance 3D simulator for embodied AI research.
+- [Habitat-lab](https://github.com/facebookresearch/habitat-lab): A modular high-level library for end-to-end development in embodied AI.
+- [3D-LLaVA](https://github.com/djiajunustc/3D-LLaVA): Towards Generalist 3D LMMs with Omni Superpoint Transformer.
 
 ## Citation
 
@@ -117,7 +118,7 @@ If you use EmboSceneExplorer in your research, please consider citing:
 @misc{EmboSceneExplorer,
   author = {EmboSceneExplorer Authors},
   title = {EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation},
-  month = {December},
+  month = {July},
   year = {2025},
   url = {https://github.com/ECNU-AILab-SII/EmboSceneExplorer/}
 }
