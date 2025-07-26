@@ -3,6 +3,9 @@
 
 # EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation
 
+[![README in English](https://img.shields.io/badge/English-d9d9d9)](./README.md)
+[![简体中文版自述文件](https://img.shields.io/badge/简体中文-d9d9d9)](./README_CN.md)
+
 ## 🔥 News
 - [2025-7-22] Version 1.0 released! 🎉
 
@@ -19,20 +22,26 @@
 
 **EmboSceneExplorer** is a multimodal scene perception, understanding, and navigation system built on the Habitat simulation environment. It enables Embodied AI Agents to perform 3D perception and reconstruction, LLM-based grounding, and goal-oriented navigation within virtual 3D scenes (e.g., ScanNet, Matterport3D). The workflow comprises four core components:
 
-1. **Multimodal Data Collection and Reconstruction**  
-  Captures RGB/RGB-D image sequences, depth maps, and semantic maps with COLMAP-style camera poses, generating multimodal scene representations including:
-   - High-fidelity meshes  
+1. **Multimodal Data Collection**  
+   Captures multimodal data including:
+   - RGB image sequences
+   - Depth maps and semantic segmentation maps
+   - COLMAP-style camera intrinsics and extrinsics (supporting 3D Gaussian Splatting training)
+  
+2. **Scene Reconstruction** 
+   Builds multimodal scene representations including:
    - Dense point clouds  
+   - High-fidelity meshes
    - Occupancy grid maps (Occ)
 
-2. **3D Visual Grounding**  
-   Bridges language and spatial understanding by:
+3. **3D Visual Grounding**  
+   Bridging language and spatial understanding, we've developed a **3D visual grounding model** that currently achieves **state-of-the-art** performance across multiple metrics::
    - Parsing natural language instructions (supporting both English and Chinese) into actionable goals
-   - Grounding semantic concepts to 3D locations
-   - Generating point-cloud-level accurate object masks from textual queries
+   - Grounding semantic concepts to precise 3D locations
+   - Generating point-cloud-level accurate object from textual queries
 
 4. **Autonomous Navigation**  
-   Integrates scene representations (3DGS/Mesh/Occ) to:
+   Integrates scene representations to:
    - Build navigable topological maps  
    - Plan optimal collision-free paths  
    - Execute exploration and goal-reaching behaviors
@@ -40,9 +49,9 @@
 ## Quick Start
 
 ### Prerequisites
-- **Miniconda/Anaconda** (latest version)
-- **NVIDIA GPU** (recommended for full performance)
-- **Linux** (Ubuntu 20.04/22.04 recommended)
+- **Miniconda/Anaconda**
+- **NVIDIA GPU** (CUDA 11.8)
+- **Linux**
 
 ### Cloning the Repository
 ```bash
@@ -66,18 +75,24 @@ conda activate emboscene
 
 ### Data Preparation
 ```bash
-# Download example scenes:
+# Download example scenes
 gdown https://drive.google.com/file/d/1jwboFEruYFIG9c31qWga6X-vgbraKIt-/view?usp=sharing
 unzip scenes.zip -d example_data/
-cp example_data/scanet/pointnav_scannet.yaml ./submodules/habitat-lab/habitat-lab/habitat/config/benchmark/nav/pointnav
 
-# Modify the root_path in example_data/scanet/scannet.yaml to the project's absolute path.
+# Modify the root_path in example_data/scanet/scannet.yaml to the project's absolute path
+data_path: /xxx/xxx/EmboSceneExplorer/....
+
+# Copy point.yaml and scant.yaml to corresponding locations in submodules  
+cp example_data/scanet/pointnav_scannet.yaml ./submodules/habitat-lab/habitat-lab/habitat/config/benchmark/nav/pointnav
 cp example_data/scanet/scannet.yaml ./submodules/habitat-lab/habitat-lab/habitat/config/habitat/dataset/pointnav/
+
+# Download pretrained 3D visual grounding model
+gdown https://drive.google.com/file/d/1OlBSTpcyIlcCqxqKgYztss6bBIIPJDFc/view?usp=sharing
 ```
 
 ### Start
 ```bash
-cd bash scripts
+cd bash_scripts
 
 # 1. Data collection:
 bash data_collection.sh
@@ -88,7 +103,7 @@ bash reconstruction.sh
 # 3. Occupancy map reconstruction:
 bash occupancy.sh
 
-# 4. Visual grounding:
+# 4. 3D Visual grounding (supporting both English and Chinese):
 bash visual_grounding.sh
 
 # 5. Navigation:
