@@ -1,13 +1,18 @@
+<div align="center">
 
 ![Teaser](assets/teaser.png)
 
-# EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation
+<h1> EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation </h1>
+Code Contributors: Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie
+
+Supervisors: [Jingyu Gong](https://faculty.ecnu.edu.cn/_s16/gjy2/main.psp), [Xin Tan](https://faculty.ecnu.edu.cn/_s16/tx2/main.psp), [Zhizhong Zhang](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [Yuan Xie†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
 
 [![README in English](https://img.shields.io/badge/English-d9d9d9)](./README.md)
 [![简体中文版自述文件](https://img.shields.io/badge/简体中文-d9d9d9)](./README_CN.md)
+</div>
 
 ## 🔥 News
-- [2025-7-22] Version 1.0 released! 🎉
+- [2025-7-28] Version 1.0 released! 🎉
 
 ## Table of Contents
 
@@ -20,7 +25,7 @@
 
 ## What is EmboSceneExplorer?
 
-**EmboSceneExplorer** is a multimodal scene perception, understanding, and navigation system built on the Habitat simulation environment. It enables Embodied AI Agents to perform 3D perception and reconstruction, LLM-based grounding, and goal-oriented navigation within virtual 3D scenes (e.g., ScanNet, Matterport3D). The workflow comprises four core components:
+**EmboSceneExplorer** is a multimodal scene perception, understanding, and navigation system built on the Habitat simulation environment. It enables Embodied AI Agents to perform 3D perception and reconstruction, LLM-based grounding, and goal-oriented navigation within virtual 3D scenes (e.g., ScanNet). The workflow comprises four core components:
 
 1. **Multimodal Data Collection**  
    Captures multimodal data including:

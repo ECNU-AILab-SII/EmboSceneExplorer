@@ -1,12 +1,18 @@
+<div align="center">
+
 ![效果图](assets/teaser.png)
 
-# EmboSceneExplorer：面向多模态感知与导航的具身场景探索器
+<h1> EmboSceneExplorer: 具身多模态感知与导航探索平台 </h1>
+Code Contributors: 高傲, 郭洛松, 李超阳, 施江鸣, 谢子龙
+
+Supervisors: [龚靖渝](https://faculty.ecnu.edu.cn/_s16/gjy2/main.psp), [谭鑫](https://faculty.ecnu.edu.cn/_s16/tx2/main.psp), [张志忠](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [谢源†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
 
 [![README in English](https://img.shields.io/badge/English-d9d9d9)](./README.md)
 [![简体中文版自述文件](https://img.shields.io/badge/简体中文-d9d9d9)](./README_CN.md)
+</div>
 
 ## 🔥 最新动态
-- [2025年7月22日] 版本 1.0 正式发布！🎉
+- [2025年7月28日] 版本 1.0 正式发布！🎉
 
 ## 目录
 
@@ -19,7 +25,7 @@
 
 ## 什么是EmboSceneExplorer?
 
-**EmboSceneExplorer** 是一个基于 Habitat 仿真环境构建的多模态场景感知、理解与导航系统。它使具身人工智能代理能够在虚拟3D场景（如 ScanNet, Matterport3D）中执行3D感知与重建、基于大语言模型（LLM）的定位以及目标导向的导航。其工作流程包含四个核心组件：
+**EmboSceneExplorer** 是一个基于 Habitat 仿真环境构建的多模态场景感知、理解与导航系统。它使具身人工智能代理能够在虚拟3D场景（如 ScanNet）中执行3D感知与重建、基于大语言模型（LLM）的定位以及目标导向的导航。其工作流程包含四个核心组件：
 
 1. **多模态数据采集**  
    采集多模态数据，包括：
