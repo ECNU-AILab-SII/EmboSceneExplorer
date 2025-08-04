@@ -5,7 +5,7 @@
 <h1> EmboSceneExplorer: 具身多模态感知与导航探索平台 </h1>
 Code Contributors: 高傲, 郭洛松, 李超阳, 施江鸣, 谢子龙
 
-Supervisors: [龚靖渝](https://faculty.ecnu.edu.cn/_s16/gjy2/main.psp), [谭鑫](https://faculty.ecnu.edu.cn/_s16/tx2/main.psp), [张志忠](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [谢源†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
+Supervisors: [龚靖渝](https://jingyugong.github.io), [谭鑫](https://tanxincs.github.io), [张志忠](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [谢源†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
 
 [![README in English](https://img.shields.io/badge/English-d9d9d9)](./README.md)
 [![简体中文版自述文件](https://img.shields.io/badge/简体中文-d9d9d9)](./README_CN.md)

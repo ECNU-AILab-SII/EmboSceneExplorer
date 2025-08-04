@@ -5,7 +5,7 @@
 <h1> EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation </h1>
 Code Contributors: Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie
 
-Supervisors: [Jingyu Gong](https://faculty.ecnu.edu.cn/_s16/gjy2/main.psp), [Xin Tan](https://faculty.ecnu.edu.cn/_s16/tx2/main.psp), [Zhizhong Zhang](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [Yuan Xie†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
+Supervisors: [Jingyu Gong](https://jingyugong.github.io), [Xin Tan](https://tanxincs.github.io), [Zhizhong Zhang](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [Yuan Xie†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
 
 [![README in English](https://img.shields.io/badge/English-d9d9d9)](./README.md)
 [![简体中文版自述文件](https://img.shields.io/badge/简体中文-d9d9d9)](./README_CN.md)
