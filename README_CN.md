@@ -3,8 +3,8 @@
 ![效果图](assets/teaser.png)
 
 <h1> EmboSceneExplorer: 具身多模态感知与导航探索平台 </h1>
-Code Contributors: 高傲, 郭洛松, 李超阳, 施江鸣, 谢子龙
 
+Code Contributors: [高傲](https://github.com/Yuhuoo), [郭洛松](https://max-luo-song.github.io/gls2000.github.io/), [李超阳](https://github.com/GiIfoyle), [施江鸣](https://shijiangming1.github.io), [谢子龙](https://github.com/XieZilongAI)  
 Supervisors: [龚靖渝](https://jingyugong.github.io), [谭鑫](https://tanxincs.github.io), [张志忠](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [谢源†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
 
 [![README in English](https://img.shields.io/badge/English-d9d9d9)](./README.md)
@@ -47,7 +47,7 @@ Supervisors: [龚靖渝](https://jingyugong.github.io), [谭鑫](https://tanxinc
 
 4. **自主导航**  
    集成场景表示（3DGS/网格/Occ）实现：
-   - 构建可导航的拓扑地图
+   - 构建可导航的占据栅格地图
    - 规划最优无碰撞路径
    - 执行探索与目标抵达行为
 
@@ -138,7 +138,7 @@ EmboSceneExplorer 的开发得益于以下开源项目：
 如果您在研究中使用了EmboSceneExplorer，请考虑引用：
 ```bibtex
 @misc{EmboSceneExplorer,
-  author = {EmboSceneExplorer Authors},
+  author = {Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie, Jingyu Gong, Xin Tan, Zhizhong Zhang, Yuan Xie†},
   title = {EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation},
   month = {July},
   year = {2025},

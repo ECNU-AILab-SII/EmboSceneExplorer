@@ -3,8 +3,8 @@
 ![Teaser](assets/teaser.png)
 
 <h1> EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation </h1>
-Code Contributors: Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie
 
+Code Contributors: [Ao Gao](https://github.com/Yuhuoo), [Luosong Guo](https://max-luo-song.github.io/gls2000.github.io), [Chaoyang Li](https://github.com/GiIfoyle), [Jiangming Shi](https://shijiangming1.github.io), [Zilong Xie](https://github.com/XieZilongAI)  
 Supervisors: [Jingyu Gong](https://jingyugong.github.io), [Xin Tan](https://tanxincs.github.io), [Zhizhong Zhang](https://faculty.ecnu.edu.cn/_s16/zzz2/main.psp), [Yuan Xie†](https://faculty.ecnu.edu.cn/_s16/xy2_11342/main.psp)(**Project Leader**)
 
 [![README in English](https://img.shields.io/badge/English-d9d9d9)](./README.md)
@@ -47,7 +47,7 @@ Supervisors: [Jingyu Gong](https://jingyugong.github.io), [Xin Tan](https://tanx
 
 4. **Autonomous Navigation**  
    Integrates scene representations to:
-   - Build navigable topological maps  
+   - Build navigable occupancy maps  
    - Plan optimal collision-free paths  
    - Execute exploration and goal-reaching behaviors
 
@@ -136,7 +136,7 @@ If you use EmboSceneExplorer in your research, please consider citing:
 
 ```bibtex
 @misc{EmboSceneExplorer,
-  author = {EmboSceneExplorer Authors},
+  author = {Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie, Jingyu Gong, Xin Tan, Zhizhong Zhang, Yuan Xie†},
   title = {EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation},
   month = {July},
   year = {2025},
