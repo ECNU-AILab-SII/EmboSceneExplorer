@@ -136,7 +136,7 @@ If you use EmboSceneExplorer in your research, please consider citing:
 
 ```bibtex
 @misc{EmboSceneExplorer,
-  author = {Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie, Jingyu Gong, Xin Tan, Zhizhong Zhang, Yuan Xie†},
+  author = {Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie, Jingyu Gong, Xin Tan, Zhizhong Zhang, Yuan Xie},
   title = {EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation},
   month = {July},
   year = {2025},

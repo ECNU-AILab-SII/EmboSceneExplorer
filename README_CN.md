@@ -138,7 +138,7 @@ EmboSceneExplorer 的开发得益于以下开源项目：
 如果您在研究中使用了EmboSceneExplorer，请考虑引用：
 ```bibtex
 @misc{EmboSceneExplorer,
-  author = {Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie, Jingyu Gong, Xin Tan, Zhizhong Zhang, Yuan Xie†},
+  author = {Ao Gao, Luosong Guo, Chaoyang Li, Jiangming Shi, Zilong Xie, Jingyu Gong, Xin Tan, Zhizhong Zhang, Yuan Xie},
   title = {EmboSceneExplorer: Embodied Scene Explorer for Multimodal Perception and Navigation},
   month = {July},
   year = {2025},
